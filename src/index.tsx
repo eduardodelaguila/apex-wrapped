@@ -1,6 +1,6 @@
 import { HTMLAttributes, ReactChild } from 'react';
-import ApexLine from './ApexLine';
-import ApexChart from './ApexChart';
+import Line from './Line';
+import Chart from './Chart';
 
 export interface Props extends HTMLAttributes<HTMLDivElement> {
   /** custom content, defaults to 'the snozzberries taste like snozzberries' */
@@ -12,4 +12,4 @@ export interface Props extends HTMLAttributes<HTMLDivElement> {
 /**
  * A custom Thing component. Neat!
  */
-export { ApexLine, ApexChart };
+export { Line, Chart };

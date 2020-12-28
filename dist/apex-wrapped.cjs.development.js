@@ -1,6 +1,13 @@
-import React, { useEffect } from 'react';
-import ApexChart from 'apexcharts';
-import dayjs from 'dayjs';
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+
+var React = require('react');
+var React__default = _interopDefault(React);
+var ApexChart = _interopDefault(require('apexcharts'));
+var dayjs = _interopDefault(require('dayjs'));
 
 function _extends() {
   _extends = Object.assign || function (target) {
@@ -34,7 +41,7 @@ var Line = function Line(props) {
       categories = props.categories,
       dateFormat = props.dateFormat;
   console.log(Object.getPrototypeOf(categories[0]));
-  useEffect(function () {
+  React.useEffect(function () {
     var chart = new ApexChart(document.querySelector('#chartLine'), _extends({}, lineDefaults, {
       series: series,
       chart: {
@@ -56,20 +63,21 @@ var Line = function Line(props) {
     }));
     chart.render();
   }, [props]);
-  return React.createElement("div", {
+  return React__default.createElement("div", {
     id: "chartLine"
   });
 };
 
 var Chart = function Chart(props) {
-  useEffect(function () {
+  React.useEffect(function () {
     var chart = new ApexChart(document.querySelector('#chartGeneral'), _extends({}, props, lineDefaults));
     chart.render();
   }, [props]);
-  return React.createElement("div", {
+  return React__default.createElement("div", {
     id: "chartGeneral"
   });
 };
 
-export { Chart, Line };
-//# sourceMappingURL=apex-wrapped.esm.js.map
+exports.Chart = Chart;
+exports.Line = Line;
+//# sourceMappingURL=apex-wrapped.cjs.development.js.map

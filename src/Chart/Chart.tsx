@@ -6,14 +6,14 @@ import { lineDefaults } from '../defaults/line';
 
 type IProps = IChartOptions;
 
-export const ApexChart = (props: IProps) => {
+export const Chart = (props: IProps) => {
   useEffect(() => {
-    const chart = new AC(document.querySelector('#apexGeneral'), {
+    const chart = new AC(document.querySelector('#chartGeneral'), {
       ...props,
       ...lineDefaults,
     });
     chart.render();
   }, [props]);
 
-  return <div id="apexGeneral" />;
+  return <div id="chartGeneral" />;
 };

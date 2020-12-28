@@ -36,6 +36,10 @@ yarn # To install dependencies
 yarn start
 ```
 
+### Date formatting
+
+DayJS has been added to support date formatting and localization, all format supported can be found [here](https://day.js.org/docs/en/display/format) and localization support can be found [here](<[https://link](https://day.js.org/docs/en/i18n/i18n)>)
+
 ## WIP
 
 The features missing in the POC are:

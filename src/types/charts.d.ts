@@ -8,6 +8,8 @@ export interface IDataSeries {
   data: number[];
 }
 
+export type IDonutSeries = number[];
+
 export type Categories = number[] | Date[] | string[];
 
 export interface IChartOptions {
